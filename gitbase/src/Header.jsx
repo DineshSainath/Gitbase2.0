@@ -5,7 +5,7 @@ import {SiGithub} from 'react-icons/si';
 function Header() {
 
     return (
-        <div>
+        <div className="HeaderDiv">
         
     <header className="Header">
     <SiGithub className="gitLogo" size={60}/>

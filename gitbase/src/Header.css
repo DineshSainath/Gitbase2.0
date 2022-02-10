@@ -1,3 +1,7 @@
+.HeaderDiv{
+  padding-bottom: 2%;
+}
+
 .Header{
     min-height: 30vh;
   display: flex;
