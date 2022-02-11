@@ -2,6 +2,9 @@ import {React, useState, useEffect} from 'react';
 import './App.css';
 import Header from './Header.jsx';
 import Box from "./Box.jsx";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
+
 
 function App() {
   
@@ -34,11 +37,18 @@ function App() {
   return (
     <div className="App">
     <Header/>
-    <input type="search" className="search" placeholder="Search by user " onChange={getInput} />
-   
+    <div className="searchBox">
+    <form className='search'>
+    <input type="search" className="input" placeholder="      Search by user " onChange={getInput}/>
+    <FontAwesomeIcon className='mGlass' icon={faSearch} />
+    </form>
+    </div>
+
+    <i class="fas fa-search"></i>
+
    {/* render if its a valid username input */}
    {status &&  <div className="card-section">  
-      <Box name={profile.name} repos={profile.public_repos} avatar={profile.avatar_url}/>
+      <Box className="cards" name={profile.name} repos={profile.public_repos} avatar={profile.avatar_url}/>
     </div>}
     
     </div>
