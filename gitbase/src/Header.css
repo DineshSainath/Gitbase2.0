@@ -1,5 +1,5 @@
 .HeaderDiv{
-  padding: 10% 2% 2% 4%;
+  padding: 5% 2% 2% 5%;
 }
 
 .Header{
@@ -10,17 +10,29 @@
   float: left;
   /* justify-content: center; */
   font-size: calc(2px + 4vmin);
-  color: white
+  color: white;
+  padding-top: 5%;
+  
+  
+}
+
+.vertical{
+  /* display: block; */
+  border-left: 1px solid #ccc;
+  height: 500px;
+  float: left;
+  margin-left: 90px;
+  vertical-align: middle;
 }
 
 .heading{
   /* padding-bottom: 5px; */
   size: 20px;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 15px;
 }
 
 .gitLogo{
-    padding-top: 16%;
+    padding-top: 25%;
     /* padding-bottom: 1.0%; */
   }

@@ -8,9 +8,10 @@ function Header() {
         <div className="HeaderDiv">
         
     <header className="Header">
-    <SiGithub className="gitLogo" size={50}/>
-     <p className="heading">G I T B A S E </p>
+    <SiGithub className="gitLogo" size={70}/>
+     <p className="heading">Gitbase </p>
      </header>
+     <span className="vertical"></span>
         
     </div>);
 
