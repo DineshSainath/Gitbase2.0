@@ -36,8 +36,8 @@ function App() {
 
   function handleMouseEnter(e) {
     e.target.style.background = "black";
-    e.target.style.width= "350px";
-    e.target.style.borderRadius="10px";
+    e.target.style.width= "200px";
+    e.target.style.borderRadius="8px";
   }
 
   return (
@@ -45,7 +45,7 @@ function App() {
     <Header/>
     <div className="searchBox" onMouseOver={handleMouseEnter}>
     <form className='search'>
-    <input type="search" className="input" placeholder="      Search by user " onChange={getInput}/>
+    <input type="search" className="input" placeholder="Search by user " onChange={getInput}/>
     <FontAwesomeIcon className='mGlass' icon={faSearch} />
     </form>
     </div>

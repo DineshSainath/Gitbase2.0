@@ -1,18 +1,26 @@
 .HeaderDiv{
-  padding-bottom: 2%;
+  padding: 10% 2% 2% 4%;
 }
 
 .Header{
-    min-height: 30vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 4vmin);
-  color: white;
+  float: left;
+  /* justify-content: center; */
+  font-size: calc(2px + 4vmin);
+  color: white
+}
+
+.heading{
+  /* padding-bottom: 5px; */
+  size: 20px;
+  margin: 0;
+  padding-top: 12px;
 }
 
 .gitLogo{
-    padding-top: 6%;
-    padding-bottom: 1.5%;
+    padding-top: 16%;
+    /* padding-bottom: 1.0%; */
   }

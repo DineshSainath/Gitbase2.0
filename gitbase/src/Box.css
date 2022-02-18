@@ -1,9 +1,14 @@
 .Card{
     width: 30rem;
     /* background: white; */
+    border: solid white;
+    margin-top: 70px;
+    margin-right: 40px;
+    margin-left: 40px;
+    /* border-width: 0 1px; */
 }
 
 .CardImg{
-    height: 20rem;
+    height: 15rem;
 
 }
