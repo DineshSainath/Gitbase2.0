@@ -2,13 +2,16 @@
     width: 30rem;
     /* background: white; */
     border: solid white;
-    margin-top: 70px;
+    /* margin-top: 70px;
     margin-right: 40px;
     margin-left: 40px;
-    /* border-width: 0 1px; */
+    border-width: 0 1px; */
 }
 
 .CardImg{
     height: 15rem;
+    border-radius: 4%;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
 
+    float:inline-end;
 }

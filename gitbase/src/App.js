@@ -33,7 +33,7 @@ function App() {
   }
 
   function handleMouseEnter(e) {
-    e.target.style.background = "black";
+    e.target.style.background = "#FDB26A";
     e.target.style.width= "220px";
     e.target.style.borderRadius="8px";
   }
