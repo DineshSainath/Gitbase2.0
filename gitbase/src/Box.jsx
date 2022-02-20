@@ -17,7 +17,7 @@ function Box(props){
 
     <p>{props.bio}</p>
 
-    <table class="info table">
+    <table className="info table">
     <tr>
         <td className="head">Id:</td>
         <td>{props.id}</td>

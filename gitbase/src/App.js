@@ -10,6 +10,7 @@ function App() {
   const [status,setStatus] = useState(false);
   const [profile, setProfile] = useState(null);
   const [repos,setRepos] = useState(null);
+  const [repoStatus,setRepoStatus] = useState(false);
   
   useEffect(() => {
 
@@ -26,7 +27,8 @@ function App() {
         let res = await fetch(data.repos_url);
         let repoData = await res.json();
         setRepos(repoData);
-        console.log(repoData);
+        // console.log(repoData);
+        setRepoStatus(true);
       }
     }
 
@@ -48,12 +50,18 @@ function App() {
     <Header mouse={handleMouseEnter} change={getInput} />
     
    {/* render if its a valid username input */}
-   {status &&  <div className="card-section">  
+   {status &&  <div className="card-section">
+
       <Box className="cards" name={profile.name} id={profile.id} bio={profile.bio} followers={profile.followers} following={profile.following} createDate={profile.created_at} updateDate={profile.updated_at} repos={profile.public_repos} reposUrl={profile.repos_url} avatar={profile.avatar_url}/>
 
+    {/* condition to check if repos are present */}
+      {repoStatus && 
+      <Box2 data={repos} count={profile.public_repos} name={repos.name} lang={repos.language} id={repos.id} desc={repos.description} url={repos.html_url} created={repos.created_at} updated={repos.updated_at}/>
+    }
 
-    </div>}
-    <Box2/>
+    </div>
+    }
+    
     
     </div>
   );

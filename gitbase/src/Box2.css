@@ -1,14 +1,38 @@
 .Box2{
     position: absolute;
     color: black;
-    margin-left: 68%;
-    top: 50px;
-    display: block;
-    /* height: 100%; */
+    margin-left: 48%;
+    top: 40px;
+    /* display: flex;
+    flex-direction:row; */
+    width:50%;
+    height: 70%;
+    justify-content: center;
     /* width: 10px; */
+    /* padding: 0% 10% 10% 10%; */
 }
 
 .boxHeading{
     font-weight: 600;
     font-size: 18px;
+}
+
+.repoBox{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    /* color */
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    /* background-clip: text;
+    color: transparent;  */
+}
+
+.card{
+    margin: 12px;
+    background-color: transparent;
+    background-clip: content-box;
+    /* background-image:linear-gradient(180deg, black 10%, #ffb36b 90%); */
 }

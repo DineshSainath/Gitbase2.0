@@ -23,7 +23,7 @@ function Header(props) {
     </form>
     </div>
 
-    <i class="fas fa-search"></i>
+    <i className="fas fa-search"></i>
 
     <span className="vertical2"></span>
         
