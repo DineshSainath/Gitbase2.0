@@ -7,7 +7,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   /* background-color: #ebab8c; */
-  background: linear-gradient(180deg, #ffb36b 0%, #1c1c1c 100%)
+  background: linear-gradient(180deg, #ffb36b 10%, #1c1c1c 110%)
 
 }
 

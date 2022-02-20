@@ -1,17 +1,56 @@
-.Card{
-    width: 30rem;
+/* .Card{ */
+    /* width: 30rem; */
     /* background: white; */
-    border: solid white;
     /* margin-top: 70px;
     margin-right: 40px;
     margin-left: 40px;
     border-width: 0 1px; */
+/* } */
+.Box{
+    /* text-align: center;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    /* float: left; */
+    margin-right: 55%; 
+    font-weight: 500;
+    /* background-image:linear-gradient(180deg, #1c1c1c 0%, #ffb36b 100%);
+    background-clip: text;
+    color: transparent; */
+}
+
+.ImgBox{
+    text-align: center;
+    float: left;
+    /* margin: 0% 0% 0% 60%; */
 }
 
 .CardImg{
-    height: 15rem;
+    height: 8rem;
     border-radius: 4%;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
 
-    float:inline-end;
+}
+
+.name{
+    /* float: left; */
+    /* margin: 10% 0% 0% 0%; */
+    /* color: black; */
+    display: block;
+    margin-top: 2%;
+}
+
+.info{
+    /* text-align: center; */
+    /* float:left; */
+    margin: 4% 6% 0 10%;
+    border-spacing: 10px;
+}
+.info .head{
+    text-align: right;
+    padding: 0% 0% 0% 0%;
+}
+.info td{
+    text-align: left;
+    padding-left: 10%;
 }

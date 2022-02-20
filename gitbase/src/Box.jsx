@@ -1,28 +1,51 @@
 import React from "react";
 import "./Box.css"
-import {Card} from "react-bootstrap";
 
 function Box(props){
 
-    return(<div className="Box">
+    return(<div className="Box flex-container">
 
-    <img className="CardImg" src={props.avatar} alt="user image" />
+    <div className="ImgBox">
+        <img className="CardImg" src={props.avatar} alt="user img" />
+        <span className="name">{props.name}</span>
+    </div>
 
-    </div>)
+    <p>{props.bio}</p>
+
+    <table class="info table">
+    <tr>
+        <td className="head">Id:</td>
+        <td>{props.id}</td>
+    </tr>
+    <tr>
+        <td className="head">Followers: </td>
+        <td>{props.followers}</td>
+    </tr>
+    <tr>
+        <td className="head">Following: </td>
+        <td>{props.following}</td>
+    </tr>
+    <tr>
+        <td className="head">Created: </td>
+        <td>{props.createDate}</td>
+    </tr>
+    <tr>
+        <td className="head">Updated: </td>
+        <td>{props.updateDate}</td>
+    </tr>
+    </table>
+
+    
+
+    
+</div>)
 
 }
 
 export default Box;
 
 
-{/* 
-    <Card className="Card" bg="Dark">
-        <Card.Img className="CardImg" variant="top" src={props.avatar} />
-        <Card.Body>
-            <Card.Title>
-                {props.name}
-            </Card.Title>
-        </Card.Body>
-    </Card> */}
+
+  
 
     
