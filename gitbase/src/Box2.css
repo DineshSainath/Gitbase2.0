@@ -1,0 +1,14 @@
+.Box2{
+    position: absolute;
+    color: black;
+    margin-left: 68%;
+    top: 50px;
+    display: block;
+    /* height: 100%; */
+    /* width: 10px; */
+}
+
+.boxHeading{
+    font-weight: 600;
+    font-size: 18px;
+}

@@ -2,7 +2,7 @@ import {React, useState, useEffect} from 'react';
 import './App.css';
 import Header from './Header.jsx';
 import Box from "./Box.jsx";
-
+import Box2 from './Box2';
 
 function App() {
   
@@ -50,7 +50,10 @@ function App() {
    {/* render if its a valid username input */}
    {status &&  <div className="card-section">  
       <Box className="cards" name={profile.name} id={profile.id} bio={profile.bio} followers={profile.followers} following={profile.following} createDate={profile.created_at} updateDate={profile.updated_at} repos={profile.public_repos} reposUrl={profile.repos_url} avatar={profile.avatar_url}/>
+
+
     </div>}
+    <Box2/>
     
     </div>
   );
