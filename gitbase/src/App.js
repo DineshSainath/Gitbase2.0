@@ -9,6 +9,7 @@ function App() {
   const [username, setUsername] = useState('');
   const [status,setStatus] = useState(false);
   const [profile, setProfile] = useState(null);
+  const [repos,setRepos] = useState(null);
   
   useEffect(() => {
 
@@ -22,6 +23,10 @@ function App() {
         let data = await response.json();
         setProfile(data);
         setStatus(true);
+        let res = await fetch(data.repos_url);
+        let repoData = await res.json();
+        setRepos(repoData);
+        console.log(repoData);
       }
     }
 
@@ -44,7 +49,7 @@ function App() {
     
    {/* render if its a valid username input */}
    {status &&  <div className="card-section">  
-      <Box className="cards" name={profile.name} id={profile.id} bio={profile.bio} followers={profile.followers} following={profile.following} createDate={profile.created_at} updateDate={profile.updated_at} repos={profile.public_repos} avatar={profile.avatar_url}/>
+      <Box className="cards" name={profile.name} id={profile.id} bio={profile.bio} followers={profile.followers} following={profile.following} createDate={profile.created_at} updateDate={profile.updated_at} repos={profile.public_repos} reposUrl={profile.repos_url} avatar={profile.avatar_url}/>
     </div>}
     
     </div>
