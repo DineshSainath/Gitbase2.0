@@ -14,9 +14,10 @@
     /* float: left; */
     margin-right: 55%; 
     font-weight: 500;
-    /* background-image:linear-gradient(180deg, #1c1c1c 0%, #ffb36b 100%);
+    /* color: rgb(36, 35, 35); */
+    background-image:linear-gradient(180deg,  rgb(36, 35, 35) 50%, black 100%);
     background-clip: text;
-    color: transparent; */
+    color: transparent; 
 }
 
 .ImgBox{
