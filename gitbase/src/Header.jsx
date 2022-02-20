@@ -24,6 +24,8 @@ function Header(props) {
     </div>
 
     <i class="fas fa-search"></i>
+
+    <span className="vertical2"></span>
         
     </div>);
 

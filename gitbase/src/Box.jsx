@@ -3,6 +3,11 @@ import "./Box.css"
 
 function Box(props){
 
+    function splitDate(date){
+        const newDate = date.split("T");
+        return newDate[0];
+    }
+
     return(<div className="Box flex-container">
 
     <div className="ImgBox">
@@ -27,15 +32,13 @@ function Box(props){
     </tr>
     <tr>
         <td className="head">Created: </td>
-        <td>{props.createDate}</td>
+        <td>{splitDate(props.createDate)}</td>
     </tr>
     <tr>
         <td className="head">Updated: </td>
-        <td>{props.updateDate}</td>
+        <td>{splitDate(props.updateDate)}</td>
     </tr>
     </table>
-
-    
 
     
 </div>)
