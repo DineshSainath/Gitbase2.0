@@ -21,7 +21,7 @@ function Box2(props){
     <div className="Box2">
         <p className="boxHeading"> Repositories </p>
         
-        <div className="repoBox flex-container" >
+        <div className="flex-container repoBox" >
 
         { repos.map((e)=> {
             return(<div className="cards"> 
