@@ -24,8 +24,8 @@ function Box2(props){
         <div className="repoBox flex-container" >
 
         { repos.map((e)=> {
-            return(<div className="card"> 
-                <p> {e.name} </p>
+            return(<div className="cards"> 
+             {e.name} 
             </div> )
         }) }
 
